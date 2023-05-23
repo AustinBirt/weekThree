@@ -32,5 +32,4 @@
 // console.log(number);
 // console.log(newNumber);
 
-let x=10+5
 
