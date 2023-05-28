@@ -7,21 +7,36 @@
 
 
 
-//Get Even Question
-//Write a for loop that will log only the even numbers in 0 through 200.
+// //Get Even Question
+// //Write a for loop that will log only the even numbers in 0 through 200.
 
-for (let i=1; i<=200; i++){
-  if(i%2===0){
-    console.log(i);
-  }
-}
+// for (let i=1; i<=200; i++){
+//   if(i%2===0){
+//     console.log(i);
+//   }
+// }
 
 
 
 //Fizz Buzz Question
 //This is a classic problem that you should get really comfortable solving. If you've solved it before, try to make it more elegant and shorter.
 
-
+for (let i = 1; i<=100; i++){
+  if (i%3===0){
+    if(i%3===0 && i%5===0){
+      console.log('FizzBuzz');
+    }
+    else if (i%3===0){
+      console.log('Fizz');
+    }
+    else if (i%5===0){
+      console.log('Buzz');
+    }
+  }
+  else {
+      console.log(i);
+  }
+}
 
 
 
