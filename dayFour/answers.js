@@ -71,20 +71,50 @@
 
 
 
-//Yell at the Ninja Turtles Question
-let ninjaTurtles=["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
-// for (let element of ninjaTurtles){
-//   console.log(ninjaTurtles.indexOf(element));
-// }
-//Printing index with for of
+// //Yell at the Ninja Turtles Question
+// let ninjaTurtles=["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// // for (let element of ninjaTurtles){
+// //   console.log(ninjaTurtles.indexOf(element));
+// // }
+// //Printing index with for of
 
-for (let element of ninjaTurtles){
-  console.log(element.toUpperCase());
-}
+// for (let element of ninjaTurtles){
+//   console.log(element.toUpperCase());
+// }
 
 
 //Methods Revisited Question
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+//1.Console log the index of Titanic.
+// console.log(favMovies.indexOf("Titanic"))
 
+// //2.Use the .sort method.
+// let newList=favMovies.sort();
+// console.log(favMovies);
+// //3.Use the method pop.
+// console.log(favMovies.pop() + ":" + " This one is my favorite")
+//4.push "Guardians of the Galaxy".
+// let newArray=[...favMovies];
+// newArray.push('Guardians of the Galaxy');
+// console.log(newArray);
+// console.log(favMovies);
+//5.Reverse the array.
+// let copyFavMovies=[...favMovies]
+// console.log(copyFavMovies.reverse());
+//6.Use the shift method
+// let copyFavMovies=favMovies.concat();
+// console.log(favMovies.unshift('hello'));//This doesnt work, need to edit original string or make a copy of original string and edit that string, then call that string
+// console.log(favMovies);
+//7.Skipping,, ive done this enough
+//8. splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained" instead of counting it yourself).
+// favMovies.splice(favMovies.indexOf("Django Unchained"), 1, 'Avatar');
+// console.log(favMovies);
+//9.slice the last half of the array. (Challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it.)
+let arrayLength=favMovies.length;
+let halfArrayLength=(arrayLength/2);
+let newSlice=favMovies.slice(halfArrayLength,arrayLength);
+console.log(newSlice);
+console.log(newSlice.lastIndexOf('Django Unchained'));
 
 
 
