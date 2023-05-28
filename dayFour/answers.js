@@ -110,15 +110,27 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 // favMovies.splice(favMovies.indexOf("Django Unchained"), 1, 'Avatar');
 // console.log(favMovies);
 //9.slice the last half of the array. (Challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it.)
-let arrayLength=favMovies.length;
-let halfArrayLength=(arrayLength/2);
-let newSlice=favMovies.slice(halfArrayLength,arrayLength);
-console.log(newSlice);
-console.log(newSlice.lastIndexOf('Django Unchained'));
+// let arrayLength=favMovies.length;
+// let halfArrayLength=(arrayLength/2);
+// let newSlice=favMovies.slice(halfArrayLength,arrayLength);
+// console.log(newSlice);
+// console.log(newSlice.lastIndexOf('Django Unchained'));
 
 
+////Where is Waldo Question
 
-//Where is Waldo Question
+//remove eggbert, change neff to no one, conosole log waldo
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                      ["Lucinda", "Jacc", "Neff", "Snoop"],
+                      ["Petunia", ["Baked Goods", "Waldo"]]];
+
+let newArray=whereIsWaldo.flat(3);
+// whereIsWaldo.splice(1,1);
+// whereIsWaldo[whereIsWaldo.indexOf('Neff')]='No One'
+newArray.splice(2,1)
+newArray[newArray.indexOf('Neff')]="No one"
+console.log(newArray);
+console.log(newArray.at(newArray.indexOf('Waldo')));
 
 
 
